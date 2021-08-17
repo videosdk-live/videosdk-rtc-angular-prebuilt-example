@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoSDKMeeting } from '@videosdk.live/js-prebuilt';
+import { environment } from './../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +8,17 @@ import { VideoSDKMeeting } from '@videosdk.live/js-prebuilt';
 })
 export class AppComponent implements OnInit {
   async getToken() {
-    const ENDPOINT = 'http://192.168.0.81:9000/'; // localhost:9000
     try {
-      const response = await fetch(`${ENDPOINT}get-token`, {
-        method: 'GET',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await fetch(
+        `${environment.VIDEOSDK_API_ENDPOINT}/get-token`,
+        {
+          method: 'GET',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+        }
+      );
       const { token } = await response.json();
       return token;
     } catch (e) {
@@ -24,12 +27,13 @@ export class AppComponent implements OnInit {
   }
   async getMeetingId(token: any) {
     try {
-      const VIDEOSDK_API_ENDPOINT = `https://api.zujonow.com/v1/meetings`;
+      const VIDEOSDK_API_ENDPOINT = `${environment.VIDEOSDK_API_ENDPOINT}/create-meeting`;
       const options = {
         method: 'POST',
         headers: {
-          Authorization: token,
+          'Content-Type': 'application/json',
         },
+        body: JSON.stringify({ token }),
       };
       const response = await fetch(VIDEOSDK_API_ENDPOINT, options)
         .then(async (result) => {
@@ -64,6 +68,12 @@ export class AppComponent implements OnInit {
         containerId: null,
         recordingEnabled: true,
         recordingWebhookUrl: 'https://www.videosdk.live/callback',
+        recordingEnabledByDefault: false,
+        participantCanToggleRecording: true,
+        brandingEnabled: true,
+        brandLogoURL:
+          'https://app.videosdk.live/_next/image?url=%2Fvideosdk_logo_circle.png&w=1920&q=75',
+        brandName: 'VIDEO SDK LIVE',
       };
       const videoMeeting = new VideoSDKMeeting();
 

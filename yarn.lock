@@ -1375,10 +1375,10 @@
     "@types/source-list-map" "*"
     source-map "^0.6.1"
 
-"@videosdk.live/js-prebuilt@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@videosdk.live/js-prebuilt/-/js-prebuilt-0.0.11.tgz#204b507bc4a752d807e6e110606aa092a31fc3a2"
-  integrity sha512-fUY8g7yMAS2J1Nt8hDFLeTWcOO7LQxXlNBUUMhNznaRbLapxLhVeYb8wVGJ32b2HM4Jws50ynVgg317q/ouadQ==
+"@videosdk.live/js-prebuilt@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@videosdk.live/js-prebuilt/-/js-prebuilt-0.0.13.tgz#8075d4e04c2ab283f0366341dfebbba95b937184"
+  integrity sha512-k+LMHWRqfOVJdDTdp3YnTDF1qJET5oRQlxb9ooCmymD1USlFh/1hD6j13dwcdAB7r7HcXEWEjAOAUp0OL3LXjA==
 
 "@webassemblyjs/ast@1.11.0":
   version "1.11.0"
