@@ -9,16 +9,13 @@ import { environment } from './../environments/environment';
 export class AppComponent implements OnInit {
   async getToken() {
     try {
-      const response = await fetch(
-        `${environment.VIDEOSDK_API_ENDPOINT}/get-token`,
-        {
-          method: 'GET',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
-        }
-      );
+      const response = await fetch(`${environment.apiUrl}/get-token`, {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+      });
       const { token } = await response.json();
       return token;
     } catch (e) {
@@ -27,7 +24,7 @@ export class AppComponent implements OnInit {
   }
   async getMeetingId(token: any) {
     try {
-      const VIDEOSDK_API_ENDPOINT = `${environment.VIDEOSDK_API_ENDPOINT}/create-meeting`;
+      const apiUrl = `${environment.apiUrl}/create-meeting`;
       const options = {
         method: 'POST',
         headers: {
@@ -35,7 +32,7 @@ export class AppComponent implements OnInit {
         },
         body: JSON.stringify({ token }),
       };
-      const response = await fetch(VIDEOSDK_API_ENDPOINT, options)
+      const response = await fetch(apiUrl, options)
         .then(async (result) => {
           const { meetingId } = await result.json();
           return meetingId;

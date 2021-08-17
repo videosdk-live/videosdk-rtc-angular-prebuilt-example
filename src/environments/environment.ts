@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  VIDEOSDK_API_ENDPOINT: 'http://localhost:9000',
+  apiUrl: 'http://localhost:9000',
 };
 
 /*

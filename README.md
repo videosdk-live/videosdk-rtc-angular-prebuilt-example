@@ -1,4 +1,4 @@
-# Video SDK No Code Prebuilt App for Angular.
+# Video SDK No Code Prebuilt App for Angular
 
 ## What is it?
 
@@ -32,16 +32,18 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
 ## Prerequisites
 
-- Basics of Angular
+- node
+- npm
 
 ## Getting started
 
-## SERVER
+### Server-side (for authentication)
 
 1. Clone the repo
 
    ```sh
    $ git clone https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example
+   $ cd videosdk-rtc-nodejs-sdk-example
    ```
 
 2. Copy the `.env.example` file to `.env` file.
@@ -70,28 +72,35 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
    $ npm run start
    ```
 
-## CLIENT
+## Client-side (angular project)
 
-1. Clone current repo
+1. In a separate folder, clone the repo
 
-2. Install NPM packages
+   ```sh
+   $ git clone https://github.com/videosdk-live/videosdk-rtc-angular-prebuilt-example
+   $ cd videosdk-rtc-angular-prebuilt-example
+   ```
+
+2. Update server api url in `src/environment.ts` file if server running on different port
+
+   ```typescript
+   export const environment = {
+     production: false,
+     apiUrl: "http://localhost:9000",
+   };
+   ```
+
+3. Install NPM packages
 
    ```sh
    $ npm install
    ```
 
-3. Run the client
+4. Run the client
 
    ```sh
    $ npm run start
    ```
-   
-4. Change Environment File (optional)
-   ##### For Development :
-   You can go to `src/environemnt.ts` and change field value of `VIDEOSDK_API_ENDPOINT`.
-
-   ##### For Production :
-   You can go to `src/environment.prod.ts` and change field value of `VIDEOSDK_API_ENDPOINT`.
 
 ## Resources
 
