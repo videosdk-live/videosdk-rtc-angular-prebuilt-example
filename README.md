@@ -85,6 +85,13 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
    ```sh
    $ npm run start
    ```
+   
+4. Change Environment File (optional)
+   ##### For Development :
+   You can go to `src/environemnt.ts` and chnage field value of `VIDEOSDK_API_ENDPOINT`.
+
+   ##### For Production :
+   You can go to `src/environment.prod.ts` and chnage field value of `VIDEOSDK_API_ENDPOINT`.
 
 ## Resources
 
