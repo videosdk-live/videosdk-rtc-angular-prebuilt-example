@@ -37,27 +37,31 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
 ## Getting started
 
-### Server-side (for authentication)
-
-1. Clone the repo
+1. In a separate folder, clone the repo
 
    ```sh
-   $ git clone https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example
-   $ cd videosdk-rtc-nodejs-sdk-example
+   $ git clone https://github.com/videosdk-live/videosdk-rtc-angular-prebuilt-example
+   $ cd videosdk-rtc-angular-prebuilt-example
    ```
 
-2. Copy the `.env.example` file to `.env` file.
+2. Update api key generated from [app.videosdk.live](https://app.videosdk.live/settings/api-keys) in `src/environment.ts`.
 
-   ```sh
-   $ cp .env.example .env
+   ```typescript
+   export const environment = {
+     production: false,
+     apiKey: "<API KEY>",
+   };
    ```
 
-3. Update the api key and secret values in the `.env` file with the ones generated from the developer console.
+3. (optional) You can also change meetingId and name of participant in `app.component.ts`.
 
-   ```
-   VIDEOSDK_API_KEY=''
-   VIDEOSDK_SECRET_KEY=''
-   VIDEOSDK_API_ENDPOINT=https://api.zujonow.com
+   ```typescript
+   //...
+
+   const meetingId = "milkyway";
+   const name = "Demo User";
+
+   //...
    ```
 
 4. Install NPM packages
@@ -66,37 +70,7 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
    $ npm install
    ```
 
-5. Run the server
-
-   ```sh
-   $ npm run start
-   ```
-
-## Client-side (angular project)
-
-1. In a separate folder, clone the repo
-
-   ```sh
-   $ git clone https://github.com/videosdk-live/videosdk-rtc-angular-prebuilt-example
-   $ cd videosdk-rtc-angular-prebuilt-example
-   ```
-
-2. Update server api url in `src/environment.ts` file if server running on different port
-
-   ```typescript
-   export const environment = {
-     production: false,
-     apiUrl: "http://localhost:9000",
-   };
-   ```
-
-3. Install NPM packages
-
-   ```sh
-   $ npm install
-   ```
-
-4. Run the client
+5. Run the client
 
    ```sh
    $ npm run start
