@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VideoSDKMeeting } from '@videosdk.live/js-prebuilt';
+import { VideoSDKMeeting } from '@videosdk.live/rtc-js-prebuilt';
 import { environment } from './../environments/environment';
 
 @Component({
@@ -71,6 +71,25 @@ export class AppComponent implements OnInit {
         brandLogoURL:
           'https://app.videosdk.live/_next/image?url=%2Fvideosdk_logo_circle.png&w=1920&q=75',
         brandName: 'VIDEO SDK LIVE',
+
+        participantCanLeave: true, // if false, leave button won't be visible
+
+        // Live stream meeting to youtube
+        livestream: {
+          autoStart: true,
+          outputs: [
+            // {
+            //   url: "rtmp://x.rtmp.youtube.com/live2",
+            //   streamKey: "<STREAM KEY FROM YOUTUBE>",
+            // },
+          ],
+        },
+
+        permissions: {
+          askToJoin: false, // Ask joined participants for entry in meeting
+          toggleParticipantMic: true, // Can toggle other participant's mic
+          toggleParticipantWebcam: true, // Can toggle other participant's webcam
+        },
       };
       const videoMeeting = new VideoSDKMeeting();
 
