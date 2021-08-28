@@ -1,1 +1,1 @@
-declare module '@videosdk.live/js-prebuilt';
+declare module '@videosdk.live/rtc-js-prebuilt';
