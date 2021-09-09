@@ -37,43 +37,6 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
 ## Getting started
 
-### Server-side (for authentication)
-
-1. Clone the repo
-
-   ```sh
-   $ git clone https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example
-   $ cd videosdk-rtc-nodejs-sdk-example
-   ```
-
-2. Copy the `.env.example` file to `.env` file.
-
-   ```sh
-   $ cp .env.example .env
-   ```
-
-3. Update the api key and secret values in the `.env` file with the ones generated from the developer console.
-
-   ```
-   VIDEOSDK_API_KEY=''
-   VIDEOSDK_SECRET_KEY=''
-   VIDEOSDK_API_ENDPOINT=https://api.zujonow.com
-   ```
-
-4. Install NPM packages
-
-   ```sh
-   $ npm install
-   ```
-
-5. Run the server
-
-   ```sh
-   $ npm run start
-   ```
-
-## Client-side (angular project)
-
 1. In a separate folder, clone the repo
 
    ```sh
@@ -86,7 +49,7 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
    ```typescript
    export const environment = {
      production: false,
-     apiUrl: "http://localhost:9000",
+     VIDEOSDK_API_KEY: "<API KEY>",
    };
    ```
 
