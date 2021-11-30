@@ -2,7 +2,7 @@
 
 ## What is it?
 
-This code sample demonstrates a one-to-one and group video call application built with [Video SDK RTC Prebuilt SDK](https://docs.videosdk.live/docs/realtime-communication/sdk-reference/prebuilt-sdk-js/setup) and [Video SDK RTC JS SDK](https://docs.videosdk.live/docs/realtime-communication/sdk-reference/javascript-sdk/setup)
+This code sample demonstrates a one-to-one and group video call application built with [Video SDK RTC Prebuilt SDK](https://docs.videosdk.live/docs/guide/prebuilt-video-and-audio-calling/getting-started) and [Video SDK RTC JS SDK](https://docs.videosdk.live/docs/realtime-communication/sdk-reference/javascript-sdk/setup)
 
 - Built for serverless video calling experience.
 - Scale it upto 5,000 participants with low code.
@@ -39,8 +39,8 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 1. In a separate folder, clone the repo
 
    ```sh
-   $ git clone https://github.com/videosdk-live/videosdk-rtc-angular-prebuilt-example
-   $ cd videosdk-rtc-angular-prebuilt-example
+   git clone https://github.com/videosdk-live/videosdk-rtc-angular-prebuilt-example
+   cd videosdk-rtc-angular-prebuilt-example
    ```
 
 2. Update server api url in `src/environment.ts` file if server running on different port
@@ -55,13 +55,13 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 3. Install NPM packages
 
    ```sh
-   $ npm install
+   npm install
    ```
 
 4. Run the client
 
    ```sh
-   $ npm run start
+   npm run start
    ```
 
 ## Resources
