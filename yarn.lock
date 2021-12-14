@@ -1375,10 +1375,10 @@
     "@types/source-list-map" "*"
     source-map "^0.6.1"
 
-"@videosdk.live/rtc-js-prebuilt@^0.1.15":
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/@videosdk.live/rtc-js-prebuilt/-/rtc-js-prebuilt-0.1.15.tgz#86bae0a50a1eacd3a4129a732697ca66868c5a5c"
-  integrity sha512-ba/a74o2gLV00BUNNWSvaDCHVJVhUFBzbMgO5eDOihNp6xGmQW1R/tWtEKlK63KaTQKZ0TFCVMgAzYK1OUxWQg==
+"@videosdk.live/rtc-js-prebuilt@^0.1.21":
+  version "0.1.21"
+  resolved "https://registry.yarnpkg.com/@videosdk.live/rtc-js-prebuilt/-/rtc-js-prebuilt-0.1.21.tgz#8f7de880ab92029d5cbd7bf70514cf8d3eabfb71"
+  integrity sha512-nWGnyjTaZ+16gXCeYCrXs1rqg7dkB2+9Yc1w7UlxYrK9dyq+fAKEx0Xg9PkKGHOtPgobmzqdAl+NHY7+ZydNXw==
 
 "@webassemblyjs/ast@1.11.0":
   version "1.11.0"
