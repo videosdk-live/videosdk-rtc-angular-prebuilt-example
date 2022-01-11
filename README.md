@@ -2,8 +2,8 @@
 
 Example available in the following languages / Frameworks:
 
-- [JavaScript](JavaScript/README.md)
 - [Angular](Angular/README.md)
+- [JavaScript](JavaScript/README.md)
 - [React](React/README.md)
 - [Vue](Vue/README.md)
 
