@@ -39,7 +39,7 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
    ```sh
    git clone https://github.com/videosdk-live/videosdk-rtc-js-prebuilt-embedded-example.git
-   cd videosdk-rtc-js-prebuilt-embedded-example
+   cd javascript
    ```
 
 2. Update api key generated from [app.videosdk.live](https://app.videosdk.live/settings/api-keys) in `index.html`.
