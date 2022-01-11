@@ -40,7 +40,7 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
    ```sh
    git clone https://github.com/videosdk-live/videosdk-rtc-vue-prebuilt-example.git
-   cd videosdk-rtc-vue-prebuilt-example
+   cd vue
    ```
 
 2. Copy the `.env.example` file to `.env` file.
