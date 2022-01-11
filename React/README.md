@@ -39,7 +39,7 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
    ```sh
    git clone https://github.com/videosdk-live/videosdk-rtc-react-prebuilt-example.git
-   cd videosdk-rtc-react-prebuilt-example
+   cd react
    ```
 
 2. Copy the `.env.example` file to `.env` file.
