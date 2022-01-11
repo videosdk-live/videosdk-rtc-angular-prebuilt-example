@@ -40,7 +40,7 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
    ```sh
    git clone https://github.com/videosdk-live/videosdk-rtc-angular-prebuilt-example
-   cd videosdk-rtc-angular-prebuilt-example
+   cd angular
    ```
 
 2. Update server api url in `src/environment.ts` file if server running on different port
