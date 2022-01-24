@@ -1,4 +1,4 @@
-# Video SDK No Code Prebuilt App.
+# Video SDK No Code Prebuilt App for React.
 
 ## What is it?
 
@@ -9,7 +9,6 @@ This code sample demonstrates a one-to-one and group video call application buil
 - 10,000 minutes free on monthly basis.
 - Inbuilt video and audio quality optimization.
 - Inbuilt chat poll, whiteboard, Q and A support.
-
 
 ## Features
 
@@ -31,44 +30,53 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
 ## Prerequisites
 
-- Web browser
+- node.js
+- npm
 
 ## Getting started
 
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/videosdk-live/videosdk-rtc-js-prebuilt-embedded-example.git
-   cd javascript
+   git clone https://github.com/videosdk-live/videosdk-rtc-prebuilt-examples.git
+   cd react
    ```
 
-2. Update api key generated from [app.videosdk.live](https://app.videosdk.live/settings/api-keys) in `index.html`.
-
-   ```javascript
-   // ...
-
-   // Set apikey, meetingId and participant name
-   const apiKey = "<API KEY>"; // generated from app.videosdk.live
-   const meetingId = "milkyway";
-   const name = "John Doe";
-
-   // ...
-   ```
-
-3. Install `live-server` or any other http server if you don't already have one.
+2. Copy the `.env.example` file to `.env` file.
 
    ```sh
-   npm install -g live-server
-   live-server
+   cp .env.example .env
    ```
 
-Visit, [https://www.videosdk.live/](https://www.videosdk.live/) to generate API key.
+3. Update api key generated from [app.videosdk.live](https://app.videosdk.live/settings/api-keys) in `.env`.
 
-Related
+   ```
+   REACT_APP_VIDEOSDK_API_KEY="<API KEY>"
+   ```
 
-- [Video SDK Prebuilt IOS SDK](https://github.com/videosdk-live/videosdk-rtc-ios-prebuilt-webview-example)
-- [Video SDK Prebuilt ANDROID SDK](https://github.com/videosdk-live/videosdk-rtc-android-prebuilt-webview-example)
-- [Video SDK Prebuilt REACT SDK](https://github.com/videosdk-live/videosdk-rtc-react-prebuilt-example)
-- [Video SDK Prebuilt ANGULAR SDK](https://github.com/videosdk-live/videosdk-rtc-angular-prebuilt-example)
-- [Video SDK Prebuilt VUE SDK](https://github.com/videosdk-live/videosdk-rtc-vue-prebuilt-example)
-- [Video SDK Prebuilt React Native SDK](https://github.com/videosdk-live/videosdk-rtc-react-native-prebuilt-ui)
+4. (optional) You can also change meetingId and name of participant in `App.js`.
+
+   ```javascript
+   //...
+
+   const meetingId = "milkyway";
+   const name = "Demo User";
+
+   //...
+   ```
+
+5. Install NPM packages
+
+   ```sh
+   npm install
+   ```
+
+6. Run the client
+
+   ```sh
+   npm run start
+   ```
+
+## Resources
+
+Visit, [https://www.videosdk.live/](https://www.videosdk.live/) to generate API key and secret.

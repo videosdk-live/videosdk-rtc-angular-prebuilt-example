@@ -1,4 +1,4 @@
-# Video SDK No Code Prebuilt App for Angular
+# Video SDK No Code Prebuilt App.
 
 ## What is it?
 
@@ -9,7 +9,6 @@ This code sample demonstrates a one-to-one and group video call application buil
 - 10,000 minutes free on monthly basis.
 - Inbuilt video and audio quality optimization.
 - Inbuilt chat poll, whiteboard, Q and A support.
-
 
 ## Features
 
@@ -31,39 +30,35 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
 ## Prerequisites
 
-- node
-- npm
+- Web browser
 
 ## Getting started
 
-1. In a separate folder, clone the repo
+1. Clone the repo
 
    ```sh
-   git clone https://github.com/videosdk-live/videosdk-rtc-angular-prebuilt-example
-   cd angular
+   git clone https://github.com/videosdk-live/videosdk-rtc-prebuilt-examples.git
+   cd javascript
    ```
 
-2. Update server api url in `src/environment.ts` file if server running on different port
+2. Update api key generated from [app.videosdk.live](https://app.videosdk.live/settings/api-keys) in `index.html`.
 
-   ```typescript
-   export const environment = {
-     production: false,
-     VIDEOSDK_API_KEY: "<API KEY>",
-   };
+   ```javascript
+   // ...
+
+   // Set apikey, meetingId and participant name
+   const apiKey = "<API KEY>"; // generated from app.videosdk.live
+   const meetingId = "milkyway";
+   const name = "John Doe";
+
+   // ...
    ```
 
-3. Install NPM packages
+3. Install `live-server` or any other http server if you don't already have one.
 
    ```sh
-   npm install
+   npm install -g live-server
+   live-server
    ```
 
-4. Run the client
-
-   ```sh
-   npm run start
-   ```
-
-## Resources
-
-Visit, [https://www.videosdk.live/](https://www.videosdk.live/) to generate API key and secret.
+Visit, [https://www.videosdk.live/](https://www.videosdk.live/) to generate API key.

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoSDKMeeting } from '@videosdk.live/rtc-js-prebuilt';
-import { environment } from './../environments/environment';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',

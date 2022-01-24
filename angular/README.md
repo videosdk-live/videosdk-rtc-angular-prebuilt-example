@@ -1,4 +1,4 @@
-# Video SDK No Code Prebuilt App for React.
+# Video SDK No Code Prebuilt App for Angular
 
 ## What is it?
 
@@ -30,48 +30,34 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 
 ## Prerequisites
 
-- node.js
+- node
 - npm
 
 ## Getting started
 
-1. Clone the repo
+1. In a separate folder, clone the repo
 
    ```sh
-   git clone https://github.com/videosdk-live/videosdk-rtc-react-prebuilt-example.git
-   cd react
+   git clone https://github.com/videosdk-live/videosdk-rtc-prebuilt-examples.git
+   cd angular
    ```
 
-2. Copy the `.env.example` file to `.env` file.
+2. Update server api url in `src/environment.ts` file if server running on different port
 
-   ```sh
-   cp .env.example .env
+   ```typescript
+   export const environment = {
+     production: false,
+     VIDEOSDK_API_KEY: "<API KEY>",
+   };
    ```
 
-3. Update api key generated from [app.videosdk.live](https://app.videosdk.live/settings/api-keys) in `.env`.
-
-   ```
-   REACT_APP_VIDEOSDK_API_KEY="<API KEY>"
-   ```
-
-4. (optional) You can also change meetingId and name of participant in `App.js`.
-
-   ```javascript
-   //...
-
-   const meetingId = "milkyway";
-   const name = "Demo User";
-
-   //...
-   ```
-
-5. Install NPM packages
+3. Install NPM packages
 
    ```sh
    npm install
    ```
 
-6. Run the client
+4. Run the client
 
    ```sh
    npm run start

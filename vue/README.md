@@ -10,7 +10,6 @@ This code sample demonstrates a one-to-one and group video call application buil
 - Inbuilt video and audio quality optimization.
 - Inbuilt chat poll, whiteboard, Q and A support.
 
-
 ## Features
 
 - [x] Completely Low code and serverless.
@@ -39,7 +38,7 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/videosdk-live/videosdk-rtc-vue-prebuilt-example.git
+   git clone https://github.com/videosdk-live/videosdk-rtc-prebuilt-examples.git
    cd vue
    ```
 
