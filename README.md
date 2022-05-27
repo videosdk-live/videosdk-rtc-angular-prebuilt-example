@@ -1,5 +1,8 @@
 # Video SDK No Code Prebuilt App for Angular
 
+THIS REPO is DEPRECATED. 
+Please refer to https://github.com/videosdk-live/videosdk-rtc-prebuilt-examples
+
 ## What is it?
 
 This code sample demonstrates a one-to-one and group video call application built with [Video SDK RTC Prebuilt SDK](https://docs.videosdk.live/docs/guide/prebuilt-video-and-audio-calling/getting-started) and [Video SDK RTC JS SDK](https://docs.videosdk.live/docs/realtime-communication/sdk-reference/javascript-sdk/setup)
